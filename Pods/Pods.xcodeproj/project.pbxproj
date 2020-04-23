@@ -713,7 +713,7 @@
 		36F243264603D4565AF3570558634CD8 /* FKFlickrGroupsDiscussTopicsGetInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrGroupsDiscussTopicsGetInfo.h; path = Classes/Model/Generated/Groups/Discuss/Topics/FKFlickrGroupsDiscussTopicsGetInfo.h; sourceTree = "<group>"; };
 		372BCA6B392A380A49509889154EEACC /* FKFlickrPhotosetsCommentsEditComment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosetsCommentsEditComment.h; path = Classes/Model/Generated/Photosets/Comments/FKFlickrPhotosetsCommentsEditComment.h; sourceTree = "<group>"; };
 		374A0C21574D6BB2E063F6137D569B11 /* FKFlickrStatsGetPhotostreamDomains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrStatsGetPhotostreamDomains.h; path = Classes/Model/Generated/Stats/FKFlickrStatsGetPhotostreamDomains.h; sourceTree = "<group>"; };
-		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* libMoya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMoya.a; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* libMoya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		38102D84250C96F5644C2EA291A23141 /* FKFlickrPhotosGetRecent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGetRecent.m; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetRecent.m; sourceTree = "<group>"; };
 		3831399A6092D38184E4DFC781012A48 /* FKFlickrTagsGetListUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrTagsGetListUser.m; path = Classes/Model/Generated/Tags/FKFlickrTagsGetListUser.m; sourceTree = "<group>"; };
 		3913003BCEDF51EB3800362D87E251C5 /* FKFlickrPhotosPeopleDeleteCoords.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosPeopleDeleteCoords.m; path = Classes/Model/Generated/Photos/People/FKFlickrPhotosPeopleDeleteCoords.m; sourceTree = "<group>"; };
@@ -790,7 +790,7 @@
 		5AC00B8D5606B26A2797FE08802266A5 /* FKFlickrPhotosGetSizes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosGetSizes.h; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetSizes.h; sourceTree = "<group>"; };
 		5D270594761D02D3C902479E7EB2C02B /* FKFlickrAuthGetToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrAuthGetToken.m; path = Classes/Model/Generated/Auth/FKFlickrAuthGetToken.m; sourceTree = "<group>"; };
 		5D43AAF54A8A8502EF39C8C0F7BEC1AC /* FKFlickrPeopleGetUploadStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPeopleGetUploadStatus.h; path = Classes/Model/Generated/People/FKFlickrPeopleGetUploadStatus.h; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E43B2ECB641A078298D4B07840551E9 /* FKFlickrContactsGetListRecentlyUploaded.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrContactsGetListRecentlyUploaded.m; path = Classes/Model/Generated/Contacts/FKFlickrContactsGetListRecentlyUploaded.m; sourceTree = "<group>"; };
 		5E9C01FA554DCF4A25411873820BC4AD /* FKFlickrGroupsBrowse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrGroupsBrowse.h; path = Classes/Model/Generated/Groups/FKFlickrGroupsBrowse.h; sourceTree = "<group>"; };
 		603FE1A68F37DF850EC438B4119D66AB /* FKFlickrGalleriesGetInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrGalleriesGetInfo.h; path = Classes/Model/Generated/Galleries/FKFlickrGalleriesGetInfo.h; sourceTree = "<group>"; };
@@ -905,7 +905,7 @@
 		8FD9228BAEF760280CFA24E0F2024B08 /* FKFlickrPhotosetsRemovePhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosetsRemovePhoto.h; path = Classes/Model/Generated/Photosets/FKFlickrPhotosetsRemovePhoto.h; sourceTree = "<group>"; };
 		901E29A1F3CA985099D099A1EAF8A788 /* FKFlickrPhotosGetNotInSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGetNotInSet.m; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetNotInSet.m; sourceTree = "<group>"; };
 		90CB91762CD85D3D36D788718672290B /* FKFlickrStatsGetCollectionReferrers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrStatsGetCollectionReferrers.h; path = Classes/Model/Generated/Stats/FKFlickrStatsGetCollectionReferrers.h; sourceTree = "<group>"; };
-		935F977AAA29103C2F25C7A6FFDD09DF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RealityPuzzle.a"; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F977AAA29103C2F25C7A6FFDD09DF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94510B058E5DC6E780669F175510042D /* Moya.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Moya.modulemap; sourceTree = "<group>"; };
 		94BC0B1E0720BB669CDB418B87E48ACA /* FKFlickrPhotosGetExif.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosGetExif.h; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetExif.h; sourceTree = "<group>"; };
 		95533707E82B653C1154E2CD736573DD /* FKFlickrPhotosUploadCheckTickets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosUploadCheckTickets.h; path = Classes/Model/Generated/Photos/Upload/FKFlickrPhotosUploadCheckTickets.h; sourceTree = "<group>"; };
@@ -930,7 +930,7 @@
 		9C61529DA9D7D9906C8AFB79BAE7F52C /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		9CA8B71EE8EE417DA3B81F8D0FB21296 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Moya/Response.swift; sourceTree = "<group>"; };
 		9D2D267853E76CA0B559FDA470A9F560 /* AccessTokenPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AccessTokenPlugin.swift; path = Sources/Moya/Plugins/AccessTokenPlugin.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E980EB264DECB31B30B58D1AB64BB89 /* FKFlickrPlacesGetChildrenWithPhotosPublic.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPlacesGetChildrenWithPhotosPublic.m; path = Classes/Model/Generated/Places/FKFlickrPlacesGetChildrenWithPhotosPublic.m; sourceTree = "<group>"; };
 		9E9DB1DF015DD6A503A818E6CE32BD65 /* FKFlickrFavoritesAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrFavoritesAdd.m; path = Classes/Model/Generated/Favorites/FKFlickrFavoritesAdd.m; sourceTree = "<group>"; };
 		9FA71618D7F66D014207E36EB2AFB1DD /* FKFlickrPrefsGetGeoPerms.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPrefsGetGeoPerms.m; path = Classes/Model/Generated/Prefs/FKFlickrPrefsGetGeoPerms.m; sourceTree = "<group>"; };
@@ -945,7 +945,7 @@
 		A29ADB33C5743581415EF5188DAD575E /* FKFlickrFavoritesAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrFavoritesAdd.h; path = Classes/Model/Generated/Favorites/FKFlickrFavoritesAdd.h; sourceTree = "<group>"; };
 		A330E1A67D74F6914E27FAA1F7F55DBC /* FKFlickrPhotosAddTags.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosAddTags.h; path = Classes/Model/Generated/Photos/FKFlickrPhotosAddTags.h; sourceTree = "<group>"; };
 		A358F46E2720E5E1C6524E694A9DAADC /* FKDUBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKDUBlocks.h; path = Classes/DevedUpKit/FKDUBlocks.h; sourceTree = "<group>"; };
-		A369AF6C5672066DEB9E8E77996A34FC /* libFlickrKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFlickrKit.a; path = libFlickrKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A369AF6C5672066DEB9E8E77996A34FC /* libFlickrKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlickrKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A374B4B71481F24490E08D19DF814BA8 /* FKFlickrPhotosetsGetPhotos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosetsGetPhotos.m; path = Classes/Model/Generated/Photosets/FKFlickrPhotosetsGetPhotos.m; sourceTree = "<group>"; };
 		A3DD804C96C57508487C5E7BAFD82526 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		A43C5A2042D578FFE0E79FF6E539A80A /* TargetType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TargetType.swift; path = Sources/Moya/TargetType.swift; sourceTree = "<group>"; };
@@ -1121,7 +1121,7 @@
 		F5E497CC5D2FE404B57F63C16777C609 /* FKFlickrPeopleGetPhotos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPeopleGetPhotos.m; path = Classes/Model/Generated/People/FKFlickrPeopleGetPhotos.m; sourceTree = "<group>"; };
 		F5F3DB84D3302FB500EE7B1BB2782EF6 /* FKFlickrAuthOauthGetAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrAuthOauthGetAccessToken.h; path = Classes/Model/Generated/Auth/Oauth/FKFlickrAuthOauthGetAccessToken.h; sourceTree = "<group>"; };
 		F6D78E4FC920A782F71CE2484766B120 /* FKFlickrPhotosCommentsEditComment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosCommentsEditComment.m; path = Classes/Model/Generated/Photos/Comments/FKFlickrPhotosCommentsEditComment.m; sourceTree = "<group>"; };
-		F87D9465992CEA630BE417FC7868C484 /* libReactiveSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReactiveSwift.a; path = libReactiveSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F87D9465992CEA630BE417FC7868C484 /* libReactiveSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReactiveSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A1CE5A5BA22C62B86F5D7924244CC9 /* FKFlickrPhotosNotesDelete.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosNotesDelete.m; path = Classes/Model/Generated/Photos/Notes/FKFlickrPhotosNotesDelete.m; sourceTree = "<group>"; };
 		F8BCC2EDE1EFD5226963AF88096538FC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		F8C2435C417FA365423D65A3D657EB91 /* FKFlickrPhotosGeoRemoveLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGeoRemoveLocation.m; path = Classes/Model/Generated/Photos/Geo/FKFlickrPhotosGeoRemoveLocation.m; sourceTree = "<group>"; };
@@ -1183,7 +1183,6 @@
 				9796FC18CCE840BD727F2833DD2C99B3 /* Core */,
 				1C5BCDCF50EB410CAF4797B4B59B5897 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -1225,7 +1224,6 @@
 				3C0A94B21B1DF4C9077AE48BD00E4CD1 /* Validation.swift */,
 				77D044B808CAC8CA1E91F2CBC47E1A16 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1281,7 +1279,6 @@
 				35F8352A38745D5F28E37439DE73EC62 /* ValidatingProperty.swift */,
 				9832F0CA78686BA7BED0ED9F7E791EE5 /* Support Files */,
 			);
-			name = ReactiveSwift;
 			path = ReactiveSwift;
 			sourceTree = "<group>";
 		};
@@ -1803,7 +1800,6 @@
 				E64593AC07C85115F87FB6E64E01B62F /* FlickrKit.m */,
 				970CDE2036F39D4EA2B6F8392D6B6C99 /* Support Files */,
 			);
-			name = FlickrKit;
 			path = FlickrKit;
 			sourceTree = "<group>";
 		};
@@ -2229,7 +2225,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -2764,7 +2760,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -2893,7 +2889,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";

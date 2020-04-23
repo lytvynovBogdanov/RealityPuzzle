@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  RealityPuzzle
 //
 //  Created by Oleksii Lytvynov-Bohdanov on 23.04.2020.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: ViewControllerBindable<MainViewModel> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
 }
-
