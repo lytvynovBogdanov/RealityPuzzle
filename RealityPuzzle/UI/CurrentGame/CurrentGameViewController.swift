@@ -8,23 +8,19 @@
 
 import UIKit
 
-class CurrentGameViewController: UIViewController {
+class CurrentGameViewController: ViewControllerBindable<CurrentGameModel> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func mainMenuPressed(_ sender: UIButton) {
+        navigateToMainScreen()
     }
-    */
-
+    
+    private func navigateToMainScreen() {
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        navigationController?.popToRootViewController(animated: false)
+    }
 }

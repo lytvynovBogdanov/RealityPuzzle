@@ -76,9 +76,13 @@ import CoreData
     // MARK: - Private
     func setMainScreen() {
         let mainViewModel = MainViewModel()
-        window?.rootViewController =
-            MainViewController(mainViewModel)
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [MainViewController(mainViewModel)]
+        window?.rootViewController = navigationController
+//        window?.rootViewController
+//        window?.rootViewController = MainViewController(mainViewModel)
         window?.makeKeyAndVisible()
     }
+    
 }
 

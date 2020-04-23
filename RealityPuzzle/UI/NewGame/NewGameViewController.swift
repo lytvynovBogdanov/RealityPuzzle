@@ -8,23 +8,20 @@
 
 import UIKit
 
-class NewGameViewController: UIViewController {
-
+class NewGameViewController: ViewControllerBindable<NewGameModel> {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = viewModel.titleModel
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func gameNumberPressed(_ sender: UIButton) {
+        startGame(with: sender.tag)
     }
-    */
-
+    
+    private func startGame(with size: Int) {
+        let viewModel = CurrentGameModel(sizeGame: size)
+        let viewController = CurrentGameViewController(viewModel)
+        navigationController?.pushViewController(viewController, animated: false)
+    }
 }

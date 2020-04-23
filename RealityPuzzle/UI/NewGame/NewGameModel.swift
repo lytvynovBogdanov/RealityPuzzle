@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct NewGameModel {
+    let titleModel = "New Game Size"
+}

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct CurrentGameModel {
+    let sizegame: Int
+    init(sizeGame: Int) {
+        if sizeGame < min_size_game {
+            self.sizegame = min_size_game
+        } else if sizeGame > max_size_game {
+            self.sizegame = max_size_game
+        } else {
+            self.sizegame = sizeGame
+        }
+    }
+}

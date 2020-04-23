@@ -12,6 +12,27 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = viewModel.titleModel
+    }
+    
+    // MARK: Actions
+    @IBAction private func newGamePressed(_ sender: UIButton) {
+        presentNewGameScreen()
+    }
+    
+    @IBAction private func leaderboardPressed(_ sender: UIButton) {
+        presentLeaderboardScreen()
+    }
+    
+    private func presentNewGameScreen() {
+        let viewModel = NewGameModel()
+        let newGameController = NewGameViewController(viewModel)
+        navigationController?.pushViewController(newGameController, animated: false)
+    }
+    
+    private func presentLeaderboardScreen() {
+        let viewModel = LeaderboardModel()
+        let newGameController = LeaderboardViewController(viewModel)
+        navigationController?.pushViewController(newGameController, animated: false)
     }
 }
