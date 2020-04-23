@@ -50,7 +50,6 @@
 				C881D30E8E3C8E6DB12C9DA8 /* Pods-RealityPuzzle.debug.xcconfig */,
 				D5D41187F6509C1EF5351B73 /* Pods-RealityPuzzle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,14 +76,62 @@
 			children = (
 				496D4EE52452079D004541E0 /* AppDelegate.swift */,
 				496D4EE72452079D004541E0 /* SceneDelegate.swift */,
-				496D4EE92452079D004541E0 /* ViewController.swift */,
+				496D4EFF24520AC9004541E0 /* Core */,
+				496D4EFE24520AB9004541E0 /* Extensions */,
+				496D4F0024520ACF004541E0 /* Game */,
+				496D4EFD24520A38004541E0 /* Models */,
+				496D4EFC24520A08004541E0 /* Resources */,
+				496D4F0124520AD9004541E0 /* UI */,
+			);
+			path = RealityPuzzle;
+			sourceTree = "<group>";
+		};
+		496D4EFC24520A08004541E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				496D4EF6245207A4004541E0 /* Info.plist */,
 				496D4EEB2452079D004541E0 /* Main.storyboard */,
 				496D4EF1245207A4004541E0 /* Assets.xcassets */,
 				496D4EF3245207A4004541E0 /* LaunchScreen.storyboard */,
-				496D4EF6245207A4004541E0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		496D4EFD24520A38004541E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				496D4EEE2452079D004541E0 /* RealityPuzzle.xcdatamodeld */,
 			);
-			path = RealityPuzzle;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		496D4EFE24520AB9004541E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		496D4EFF24520AC9004541E0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		496D4F0024520ACF004541E0 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		496D4F0124520AD9004541E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				496D4EE92452079D004541E0 /* ViewController.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		785BEC1F85CAF2B95C128978 /* Frameworks */ = {
@@ -341,7 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RealityPuzzle/Info.plist;
+				INFOPLIST_FILE = RealityPuzzle/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RealityPuzzle/Info.plist;
+				INFOPLIST_FILE = RealityPuzzle/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
