@@ -1,0 +1,6 @@
+module Pods_RealityPuzzle {
+  umbrella header "Pods-RealityPuzzle-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.1.0)
+  - FlickrKit (1.0.9)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ReactiveSwift (6.2.1)
+
+DEPENDENCIES:
+  - FlickrKit
+  - Moya
+  - ReactiveSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FlickrKit
+    - Moya
+    - ReactiveSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  FlickrKit: 79ffaf64a12293ba2b1aa8a2e53a4958cb113256
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ReactiveSwift: 07ddf579f4eb3ee3bd656214f0461aaf2c0fd639
+
+PODFILE CHECKSUM: 4d05cc67381c224e0f841336add0450845e3842f
+
+COCOAPODS: 1.8.4
