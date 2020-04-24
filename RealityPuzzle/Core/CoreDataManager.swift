@@ -14,9 +14,9 @@ class CoreDataManager {
     
     lazy var persistentContainer: NSPersistentContainer = {
         let momdName = "ReallityPuzzle"
-        
-        guard let modelURL = Bundle(for: type(of: self)).url(forResource: momdName, withExtension:"momd") else {
-                fatalError("Error loading model from bundle")
+        let bundle = Bundle(for: type(of: self))
+        guard let modelURL = bundle.url(forResource: momdName, withExtension:"momd") else {
+            fatalError("Error loading model from bundle")
         }
         
         guard let managedObjectModel = NSManagedObjectModel(contentsOf: modelURL) else {
@@ -36,13 +36,15 @@ class CoreDataManager {
     func saveContext() {
         DispatchQueue.main.async { [weak self] in
             guard let context = self?.persistentContainer.viewContext else { return }
-            if context.hasChanges {
-                do {
-                    try context.save()
-                } catch {
-                    let nserror = error as NSError
-                    fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
-                }
+            if !context.hasChanges {
+                return
+            }
+                
+            do {
+                try context.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
     }

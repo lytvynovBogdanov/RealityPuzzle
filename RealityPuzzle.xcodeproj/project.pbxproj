@@ -29,7 +29,6 @@
 		496D4F2924520E50004541E0 /* ViewControllerBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D4F2824520E50004541E0 /* ViewControllerBindable.swift */; };
 		496D4F2B24520E77004541E0 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D4F2A24520E77004541E0 /* ViewModelBindable.swift */; };
 		496D4F2D245213ED004541E0 /* NSObject+Classname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D4F2C245213ED004541E0 /* NSObject+Classname.swift */; };
-		49A6FD4F24525957008CBEE9 /* Ranged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD4E24525957008CBEE9 /* Ranged.swift */; };
 		49A6FD51245259E7008CBEE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD50245259E7008CBEE9 /* Constants.swift */; };
 		49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */; };
 		49A6FD572452CD07008CBEE9 /* UserEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD552452CD07008CBEE9 /* UserEntryViewController.swift */; };
@@ -38,6 +37,7 @@
 		49A6FD5E2452CFBC008CBEE9 /* UsersOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A6FD5C2452CFBC008CBEE9 /* UsersOverviewViewController.xib */; };
 		49A6FD602452CFD0008CBEE9 /* UsersOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD5F2452CFD0008CBEE9 /* UsersOverviewViewModel.swift */; };
 		49A6FD632452D118008CBEE9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD622452D118008CBEE9 /* CoreDataManager.swift */; };
+		49A6FD662452D266008CBEE9 /* NSManagedObject+fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD652452D266008CBEE9 /* NSManagedObject+fetch.swift */; };
 		9C4F1BF4DF800BF3E3936C0D /* libPods-RealityPuzzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527AF445C4F9A7D06D8A87BF /* libPods-RealityPuzzle.a */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,6 @@
 		496D4F2824520E50004541E0 /* ViewControllerBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBindable.swift; sourceTree = "<group>"; };
 		496D4F2A24520E77004541E0 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
 		496D4F2C245213ED004541E0 /* NSObject+Classname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Classname.swift"; sourceTree = "<group>"; };
-		49A6FD4E24525957008CBEE9 /* Ranged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranged.swift; sourceTree = "<group>"; };
 		49A6FD50245259E7008CBEE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryViewModel.swift; sourceTree = "<group>"; };
 		49A6FD552452CD07008CBEE9 /* UserEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +74,7 @@
 		49A6FD5C2452CFBC008CBEE9 /* UsersOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersOverviewViewController.xib; sourceTree = "<group>"; };
 		49A6FD5F2452CFD0008CBEE9 /* UsersOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOverviewViewModel.swift; sourceTree = "<group>"; };
 		49A6FD622452D118008CBEE9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		49A6FD652452D266008CBEE9 /* NSManagedObject+fetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+fetch.swift"; sourceTree = "<group>"; };
 		527AF445C4F9A7D06D8A87BF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C881D30E8E3C8E6DB12C9DA8 /* Pods-RealityPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealityPuzzle.debug.xcconfig"; path = "Target Support Files/Pods-RealityPuzzle/Pods-RealityPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D41187F6509C1EF5351B73 /* Pods-RealityPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealityPuzzle.release.xcconfig"; path = "Target Support Files/Pods-RealityPuzzle/Pods-RealityPuzzle.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 		496D4EFE24520AB9004541E0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				49A6FD4D24525941008CBEE9 /* Wrappers */,
+				49A6FD642452D252008CBEE9 /* CoreData */,
 				496D4F2C245213ED004541E0 /* NSObject+Classname.swift */,
 			);
 			path = Extensions;
@@ -241,14 +241,6 @@
 			path = Bindable;
 			sourceTree = "<group>";
 		};
-		49A6FD4D24525941008CBEE9 /* Wrappers */ = {
-			isa = PBXGroup;
-			children = (
-				49A6FD4E24525957008CBEE9 /* Ranged.swift */,
-			);
-			path = Wrappers;
-			sourceTree = "<group>";
-		};
 		49A6FD522452CCCA008CBEE9 /* UserEntry */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +268,14 @@
 				49A6FD5F2452CFD0008CBEE9 /* UsersOverviewViewModel.swift */,
 			);
 			path = UsersOverview;
+			sourceTree = "<group>";
+		};
+		49A6FD642452D252008CBEE9 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				49A6FD652452D266008CBEE9 /* NSManagedObject+fetch.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		785BEC1F85CAF2B95C128978 /* Frameworks */ = {
@@ -398,12 +398,12 @@
 				496D4F0324520B2B004541E0 /* GameGenerator.swift in Sources */,
 				496D4F2924520E50004541E0 /* ViewControllerBindable.swift in Sources */,
 				496D4F2524520CE8004541E0 /* LeaderboardViewController.swift in Sources */,
-				49A6FD4F24525957008CBEE9 /* Ranged.swift in Sources */,
 				496D4F2D245213ED004541E0 /* NSObject+Classname.swift in Sources */,
 				49A6FD572452CD07008CBEE9 /* UserEntryViewController.swift in Sources */,
 				496D4F1C24520CA0004541E0 /* CurrentGameViewController.swift in Sources */,
 				496D4F2B24520E77004541E0 /* ViewModelBindable.swift in Sources */,
 				49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */,
+				49A6FD662452D266008CBEE9 /* NSManagedObject+fetch.swift in Sources */,
 				496D4F0924520B91004541E0 /* Game.swift in Sources */,
 				496D4F1524520C51004541E0 /* NewGameViewController.swift in Sources */,
 				496D4F0E24520C1D004541E0 /* MainViewController.swift in Sources */,
