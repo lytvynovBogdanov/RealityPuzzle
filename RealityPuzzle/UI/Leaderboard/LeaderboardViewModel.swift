@@ -1,5 +1,5 @@
 //
-//  NewGameModel.swift
+//  LeaderboardModelView.swift
 //  RealityPuzzle
 //
 //  Created by Oleksii Lytvynov-Bohdanov on 23.04.2020.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct NewGameModel {
-    let titleModel = "New Game Size"
+struct LeaderboardModelView {
+    let titleModel = "Leaderboard"
 }

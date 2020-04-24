@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LeaderboardViewController: ViewControllerBindable<LeaderboardModel> {
+class LeaderboardViewController: ViewControllerBindable<LeaderboardModelView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

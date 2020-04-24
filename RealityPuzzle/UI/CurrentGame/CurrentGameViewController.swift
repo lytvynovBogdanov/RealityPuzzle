@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrentGameViewController: ViewControllerBindable<CurrentGameModel> {
+class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

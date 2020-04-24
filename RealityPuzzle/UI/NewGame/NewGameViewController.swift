@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewGameViewController: ViewControllerBindable<NewGameModel> {
+class NewGameViewController: ViewControllerBindable<NewGameViewModel> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ class NewGameViewController: ViewControllerBindable<NewGameModel> {
     }
     
     private func startGame(with size: Int) {
-        let viewModel = CurrentGameModel(sizeGame: size)
+        let viewModel = CurrentGameViewModel(sizeGame: size)
         let viewController = CurrentGameViewController(viewModel)
         navigationController?.pushViewController(viewController, animated: false)
     }

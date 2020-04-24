@@ -1,5 +1,5 @@
 //
-//  CurrentGameModel.swift
+//  CurrentGameViewModel.swift
 //  RealityPuzzle
 //
 //  Created by Oleksii Lytvynov-Bohdanov on 23.04.2020.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CurrentGameModel {
+struct CurrentGameViewModel {
     let sizegame: Int
     init(sizeGame: Int) {
         if sizeGame < min_size_game {

@@ -25,13 +25,13 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
     }
     
     private func presentNewGameScreen() {
-        let viewModel = NewGameModel()
+        let viewModel = NewGameViewModel()
         let newGameController = NewGameViewController(viewModel)
         navigationController?.pushViewController(newGameController, animated: false)
     }
     
     private func presentLeaderboardScreen() {
-        let viewModel = LeaderboardModel()
+        let viewModel = LeaderboardModelView()
         let newGameController = LeaderboardViewController(viewModel)
         navigationController?.pushViewController(newGameController, animated: false)
     }

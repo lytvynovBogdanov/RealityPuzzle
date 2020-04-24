@@ -79,10 +79,15 @@ import CoreData
         let navigationController = UINavigationController()
         navigationController.viewControllers = [MainViewController(mainViewModel)]
         window?.rootViewController = navigationController
-//        window?.rootViewController
-//        window?.rootViewController = MainViewController(mainViewModel)
         window?.makeKeyAndVisible()
     }
     
+    func setUserEnryScreen() {
+        let userEntryViewModel = UserEntryViewModel()
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [UserEntryViewController(userEntryViewModel)]
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
 }
 
