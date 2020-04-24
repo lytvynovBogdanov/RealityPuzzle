@@ -37,6 +37,7 @@
 		49A6FD5D2452CFBC008CBEE9 /* UsersOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD5B2452CFBC008CBEE9 /* UsersOverviewViewController.swift */; };
 		49A6FD5E2452CFBC008CBEE9 /* UsersOverviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A6FD5C2452CFBC008CBEE9 /* UsersOverviewViewController.xib */; };
 		49A6FD602452CFD0008CBEE9 /* UsersOverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD5F2452CFD0008CBEE9 /* UsersOverviewViewModel.swift */; };
+		49A6FD632452D118008CBEE9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD622452D118008CBEE9 /* CoreDataManager.swift */; };
 		9C4F1BF4DF800BF3E3936C0D /* libPods-RealityPuzzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527AF445C4F9A7D06D8A87BF /* libPods-RealityPuzzle.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		49A6FD5B2452CFBC008CBEE9 /* UsersOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOverviewViewController.swift; sourceTree = "<group>"; };
 		49A6FD5C2452CFBC008CBEE9 /* UsersOverviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersOverviewViewController.xib; sourceTree = "<group>"; };
 		49A6FD5F2452CFD0008CBEE9 /* UsersOverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOverviewViewModel.swift; sourceTree = "<group>"; };
+		49A6FD622452D118008CBEE9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		527AF445C4F9A7D06D8A87BF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C881D30E8E3C8E6DB12C9DA8 /* Pods-RealityPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealityPuzzle.debug.xcconfig"; path = "Target Support Files/Pods-RealityPuzzle/Pods-RealityPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D41187F6509C1EF5351B73 /* Pods-RealityPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealityPuzzle.release.xcconfig"; path = "Target Support Files/Pods-RealityPuzzle/Pods-RealityPuzzle.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				496D4F0224520B2B004541E0 /* GameGenerator.swift */,
+				49A6FD622452D118008CBEE9 /* CoreDataManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				496D4EE62452079D004541E0 /* AppDelegate.swift in Sources */,
 				496D4F1F24520CAD004541E0 /* CurrentGameViewModel.swift in Sources */,
 				496D4F0524520B58004541E0 /* Board.swift in Sources */,
+				49A6FD632452D118008CBEE9 /* CoreDataManager.swift in Sources */,
 				496D4EF02452079D004541E0 /* RealityPuzzle.xcdatamodeld in Sources */,
 				496D4F0324520B2B004541E0 /* GameGenerator.swift in Sources */,
 				496D4F2924520E50004541E0 /* ViewControllerBindable.swift in Sources */,
