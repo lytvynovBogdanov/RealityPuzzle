@@ -123,6 +123,7 @@
                     </constraints>
                 </stackView>
             </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="Y7K-AN-0MV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3XU-KJ-6jJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Y7K-AN-0MV" secondAttribute="trailing" constant="20" id="PGV-gM-bqS"/>

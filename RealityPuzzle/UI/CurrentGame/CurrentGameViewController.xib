@@ -35,6 +35,7 @@
                     </connections>
                 </button>
             </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="925-t1-Dpf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="86F-EP-b8C"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="925-t1-Dpf" secondAttribute="trailing" constant="20" id="x2N-jU-KJK"/>

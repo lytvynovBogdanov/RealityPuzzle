@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 extension NSManagedObject {
-    static func fetch(with predicate: NSPredicate? = nil, sort: [String]? = nil, ascending: Bool = false, resultCallback: (([Self]?) -> Void)) {
+    static func fetch(with predicate: NSPredicate? = nil, sort: [String]? = nil, ascending: Bool = false) -> [NSManagedObject]? {
         
         let managedContext = CoreDataManager.shared.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: Self.classString)
@@ -24,10 +24,10 @@ extension NSManagedObject {
 
         do {
             let result = try managedContext.fetch(fetchRequest)
-            resultCallback(result as? [Self])
+            return result
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
-            return resultCallback(nil)
+            return nil
         }
     }
     

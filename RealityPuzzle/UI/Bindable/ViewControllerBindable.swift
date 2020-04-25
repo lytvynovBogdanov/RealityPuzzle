@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewControllerBindable<Type>: UIViewController, ViewModelBindable {
     typealias ViewModel = Type
+    private(set) var disposeBag = DisposeBag()
     var viewModel: Type {
         didSet {
-            bind(viewModel)
+            disposeBag = DisposeBag()
         }
     }
+    
     
     required init(_ viewModel: Type) {
         self.viewModel = viewModel
@@ -28,5 +31,4 @@ class ViewControllerBindable<Type>: UIViewController, ViewModelBindable {
     func bind(_ viewModel: Type) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

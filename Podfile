@@ -1,6 +1,7 @@
 target "RealityPuzzle" do
     pod 'Moya'
     pod 'FlickrKit'
-    pod 'ReactiveSwift'
+    pod 'RxSwift'
+    pod 'RxCocoa'
 end
 

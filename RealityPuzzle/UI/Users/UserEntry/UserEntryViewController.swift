@@ -10,21 +10,19 @@ import UIKit
 
 class UserEntryViewController: ViewControllerBindable<UserEntryViewModel> {
 
+    @IBOutlet weak var nameTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = viewModel.titleModel
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: Private
+    @IBAction private func savePressed(_ sender: UIButton) {
+        viewModel.saveNewUser(with: nameTextField.text, success: {
+            AppDelegate.shared.setMainScreen()
+        }) { [weak self] message in
+            self?.presentErrorAlert(message: message)
+        }
     }
-    */
-
 }

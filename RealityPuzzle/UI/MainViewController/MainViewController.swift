@@ -10,8 +10,8 @@ import UIKit
 
 class MainViewController: ViewControllerBindable<MainViewModel> {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         title = viewModel.titleModel
     }
     
@@ -22,6 +22,10 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
     
     @IBAction private func leaderboardPressed(_ sender: UIButton) {
         presentLeaderboardScreen()
+    }
+
+    @IBAction func changeUserPressed(_ sender: UIButton) {
+        presentSelectUserScreen()
     }
     
     private func presentNewGameScreen() {
@@ -34,5 +38,11 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
         let viewModel = LeaderboardModelView()
         let newGameController = LeaderboardViewController(viewModel)
         navigationController?.pushViewController(newGameController, animated: false)
+    }
+    
+    private func presentSelectUserScreen() {
+        let viewModel = UsersOverviewViewModel()
+        let viewControlller = UsersOverviewViewController(viewModel)
+        navigationController?.pushViewController(viewControlller, animated: false)
     }
 }

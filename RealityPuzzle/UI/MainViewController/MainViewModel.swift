@@ -9,5 +9,7 @@
 import Foundation
 
 struct MainViewModel {
-    let titleModel = "Main Menu"
+    var titleModel: String {
+        return UserPreferences.User.id
+    }
 }

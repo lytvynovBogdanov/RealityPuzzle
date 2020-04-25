@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import CoreData
 
 struct UsersOverviewViewModel {
     
+    let users = User.all()
 }

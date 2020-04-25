@@ -13,7 +13,7 @@ class CoreDataManager {
     static let shared = CoreDataManager()
     
     lazy var persistentContainer: NSPersistentContainer = {
-        let momdName = "ReallityPuzzle"
+        let momdName = "RealityPuzzle"
         let bundle = Bundle(for: type(of: self))
         guard let modelURL = bundle.url(forResource: momdName, withExtension:"momd") else {
             fatalError("Error loading model from bundle")
