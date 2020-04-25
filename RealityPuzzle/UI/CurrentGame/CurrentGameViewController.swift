@@ -9,12 +9,21 @@
 import UIKit
 
 class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
-
+    @IBOutlet weak var boardView: Board!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        if boardView.subviews.count == 0 {
+            boardView.gameSize = viewModel.gameSize
+        }
+    }
+
     @IBAction func mainMenuPressed(_ sender: UIButton) {
         navigateToMainScreen()
     }

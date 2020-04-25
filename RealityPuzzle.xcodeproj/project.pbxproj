@@ -34,6 +34,7 @@
 		499660C924542D6D00E9DAD6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660C824542D6D00E9DAD6 /* String.swift */; };
 		499660D024542EF300E9DAD6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */; };
 		499660D124542EF300E9DAD6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */; };
+		499660D32454B5AB00E9DAD6 /* Limitation=Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660D22454B5AB00E9DAD6 /* Limitation=Wrapper.swift */; };
 		49A6FD51245259E7008CBEE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD50245259E7008CBEE9 /* Constants.swift */; };
 		49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */; };
 		49A6FD572452CD07008CBEE9 /* UserEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD552452CD07008CBEE9 /* UserEntryViewController.swift */; };
@@ -77,6 +78,7 @@
 		499660C824542D6D00E9DAD6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		499660D22454B5AB00E9DAD6 /* Limitation=Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Limitation=Wrapper.swift"; sourceTree = "<group>"; };
 		49A6FD50245259E7008CBEE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryViewModel.swift; sourceTree = "<group>"; };
 		49A6FD552452CD07008CBEE9 /* UserEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryViewController.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 				496D4F2C245213ED004541E0 /* NSObject+Classname.swift */,
 				49A6FD68245425EA008CBEE9 /* UserDefault+Wrapper.swift */,
 				499660C824542D6D00E9DAD6 /* String.swift */,
+				499660D22454B5AB00E9DAD6 /* Limitation=Wrapper.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				496D4F0E24520C1D004541E0 /* MainViewController.swift in Sources */,
 				496D4F2224520CDA004541E0 /* LeaderboardViewModel.swift in Sources */,
 				49A6FD602452CFD0008CBEE9 /* UsersOverviewViewModel.swift in Sources */,
+				499660D32454B5AB00E9DAD6 /* Limitation=Wrapper.swift in Sources */,
 				496D4F1124520C2A004541E0 /* MainViewModel.swift in Sources */,
 				496D4F1824520C60004541E0 /* NewGameViewModel.swift in Sources */,
 			);

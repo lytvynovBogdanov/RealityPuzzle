@@ -9,14 +9,14 @@
 import Foundation
 
 struct CurrentGameViewModel {
-    let sizegame: Int
+    let gameSize: Int
     init(sizeGame: Int) {
         if sizeGame < min_size_game {
-            self.sizegame = min_size_game
+            self.gameSize = min_size_game
         } else if sizeGame > max_size_game {
-            self.sizegame = max_size_game
+            self.gameSize = max_size_game
         } else {
-            self.sizegame = sizeGame
+            self.gameSize = sizeGame
         }
     }
 }

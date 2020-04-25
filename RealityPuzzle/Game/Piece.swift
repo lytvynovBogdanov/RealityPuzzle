@@ -17,11 +17,11 @@ class Piece: UILabel {
     }
     
     convenience init(coordinate: (Int, Int), finalPosition: (Int, Int)) {
-        self.init(frame: CGRect.zero, title: "", finalPosition: finalPosition)
+        self.init(frame: CGRect.zero, finalPosition: finalPosition)
         self.coordinate = coordinate
     }
     
-    init(frame: CGRect, title: String, finalPosition: (Int, Int)) {
+    init(frame: CGRect, title: String = "", finalPosition: (Int, Int)) {
         self.finalCoordinate = finalPosition
         super.init(frame: frame)
         self.text = title
