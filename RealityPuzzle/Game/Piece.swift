@@ -7,22 +7,24 @@
 //
 
 import UIKit
+import RxCocoa
 
 class Piece: UILabel {
-    var coordinate = (0, 0)
+    var coordinateObservable: BehaviorRelay<(Int, Int)>
     let finalCoordinate: (Int, Int)
     
     var isFinalPosition: Bool {
-        return coordinate == finalCoordinate
+        return coordinateObservable.value == finalCoordinate
     }
     
     convenience init(coordinate: (Int, Int), finalPosition: (Int, Int)) {
         self.init(frame: CGRect.zero, finalPosition: finalPosition)
-        self.coordinate = coordinate
+        self.coordinateObservable = BehaviorRelay(value: coordinate)
     }
     
     init(frame: CGRect, title: String = "", finalPosition: (Int, Int)) {
         self.finalCoordinate = finalPosition
+        self.coordinateObservable = BehaviorRelay(value: (0, 0))
         super.init(frame: frame)
         self.text = title
         self.backgroundColor = .orange
@@ -35,6 +37,7 @@ class Piece: UILabel {
     
     required init?(coder aDecoder: NSCoder) {
         self.finalCoordinate = (0, 0)
+        self.coordinateObservable = BehaviorRelay(value: (0, 0))
         super.init(coder: aDecoder)
     }
 }
