@@ -11,4 +11,4 @@ import Foundation
 let min_size_game = 3
 let max_size_game = 8
 
-typealias Callback = (() -> Void)?
+typealias Callback = (() -> Void)

@@ -11,7 +11,7 @@ import Foundation
 struct UserEntryViewModel {
     let titleModel = "Enter User Name"
     
-    func saveNewUser(with name: String?, success: Callback, error: ((String) -> Void)?) {
+    func saveNewUser(with name: String?, success: Callback?, error: ((String) -> Void)?) {
         guard let name = name,
             !name.trimmedWhitspaces.isEmpty else {
                 error?("Wrong name")

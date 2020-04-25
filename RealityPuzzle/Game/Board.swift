@@ -36,16 +36,11 @@ class Board: UIView {
                                 y: distanceBetweenElements,
                                 width: buttonSize,
                                 height: buttonSize)
-        // the app will select each number and will generate
-        // the buttons. currentX and currentY are coordinates (pixels) for current number
-//        var currentX = distanceBetweenElements
-//        var currentY = distanceBetweenElements
-        // the position for the button. for example in the puzzle 3x3 you'll have coordinates between (0, 0) and (2, 2)
-        var currentPositionX = 0
-        var currentPositionY = 0
+        var currentPosition = (0, 0)
 
         var blankPiece: Piece!
         var pieces = [Piece]()
+        disposeBag = DisposeBag()
         
         func subscribePieceCoordinate(piece: Piece) {
             piece.coordinateObservable
@@ -68,33 +63,32 @@ class Board: UIView {
                                   title: String(number),
                                   finalPosition: (Int(finalPositionX), Int(finalPositionY)))
                 
-                piece.coordinateObservable.accept((currentPositionX, currentPositionY))
+                piece.coordinateObservable.accept((currentPosition.0, currentPosition.1))
                 subscribePieceCoordinate(piece: piece)
                 piece.isUserInteractionEnabled = true
                 registerGestures(for: piece)
-//                piece.frame.origin.x = currentX // set coordinate on the board in the pixels. For example we know that distance between buttons is 20.  The button size is 60, the distance from the board = 20. So the number 3 for example will be 20 + 60 + 20 + 60 + 20. For y is 20 etc.
-//                piece.frame.origin.y = currentY // the same for y. from top to bottom
                 pieces.append(piece)
                 addSubview(piece)
             } else { // for blank piece
-                blankPiece = Piece(coordinate: (currentPositionX, currentPositionY),
+                blankPiece = Piece(coordinate: (currentPosition.0, currentPosition.1),
                                    finalPosition: (gameSize - 1, gameSize - 1))
                 subscribePieceCoordinate(piece: blankPiece)
             }
-            // move current x/y cooridnates on the frame.
-            // we are in the loop. so we need to change current x/y position with button size and distance size
-//            currentX += buttonSize + distanceBetweenElements // currentX = currentX + 60 + 20
-            currentPositionX += 1 // current position X between (0, 0) - (2, 2)
-            if currentPositionX == gameSize { // the app add buttons from left to right and after from top to bottom. If last added element is right element, we need to go to next line (y coordinate)
-//                currentX = distanceBetweenElements // set current pixel to begin board (20)
-//                currentY += buttonSize + distanceBetweenElements // currenty = currentY + 60 + 20
-                currentPositionX = 0
-                currentPositionY += 1
+            currentPosition.0 += 1
+            if currentPosition.0 == gameSize {
+                currentPosition.0 = 0
+                currentPosition.1 += 1
             }
         }
         game = Game(pieces: pieces,
                     blankPiece: blankPiece,
                     gameLength: gameSize)
+        game?.gameOverObservable
+            .filter { $0 == true }
+            .subscribe(onNext: { (_) in
+                print("finish")
+                
+            }).disposed(by: disposeBag)
     }
     
     private func registerGestures(for label: UILabel) {

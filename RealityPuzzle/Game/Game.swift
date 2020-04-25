@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import RxCocoa
+import RxSwift
 
-struct Game {
+class Game {
     let pieces: [Piece]
     let blankPiece: Piece
     let gameLength: Int
+    
+    let gameOverObservable = BehaviorRelay(value: false)
+    
+    private let disposeBag = DisposeBag()
     
     private enum PiecePosition {
         case left
@@ -19,6 +25,20 @@ struct Game {
         case top
         case bottom
         case equal
+    }
+    
+    init(pieces: [Piece], blankPiece: Piece, gameLength: Int) {
+        self.pieces = pieces
+        self.blankPiece = blankPiece
+        self.gameLength = gameLength
+        
+        blankPiece.coordinateObservable
+            .skip(1)
+            .subscribe(onNext: { [weak self] (coordinates) in
+                if pieces.filter({ $0.coordinateObservable.value != $0.finalCoordinate }).count == 0 {
+                    self?.gameOverObservable.accept(true)
+                }
+            }).disposed(by: disposeBag)
     }
     
     func movePiceIfPossible(_ piece: Piece) {
