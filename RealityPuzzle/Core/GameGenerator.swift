@@ -13,7 +13,7 @@ struct GameGenerator {
         var finalArray: [Int] = []
         repeat {
             finalArray = randomArray(count: count)
-        } while checkValid(array: finalArray)
+        } while !checkValid(array: finalArray)
         
         return finalArray
     }
