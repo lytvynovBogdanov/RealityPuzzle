@@ -1048,7 +1048,7 @@
 		36771690164ABF9132BA364022BED508 /* FKFlickrGroupsPoolsAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrGroupsPoolsAdd.m; path = Classes/Model/Generated/Groups/Pools/FKFlickrGroupsPoolsAdd.m; sourceTree = "<group>"; };
 		36EB6F7D0FDEA38D59C29A3B3D58D635 /* RxSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.xcconfig; sourceTree = "<group>"; };
 		371769DF82BF3330A0ABD17515B69C57 /* FKFlickrPhotosGeoCorrectLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGeoCorrectLocation.m; path = Classes/Model/Generated/Photos/Geo/FKFlickrPhotosGeoCorrectLocation.m; sourceTree = "<group>"; };
-		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* libMoya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMoya.a; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* libMoya.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMoya.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3792FA38A4559C81F5693029502320EC /* FKURLBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKURLBuilder.h; path = Classes/Network/FKURLBuilder.h; sourceTree = "<group>"; };
 		37F8DE72837FDC3FF367D1937188033C /* ReplaySubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaySubject.swift; path = RxSwift/Subjects/ReplaySubject.swift; sourceTree = "<group>"; };
 		38019B4596E31F0BF4B0068C91D4A5B0 /* FKFlickrFavoritesGetPublicList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrFavoritesGetPublicList.h; path = Classes/Model/Generated/Favorites/FKFlickrFavoritesGetPublicList.h; sourceTree = "<group>"; };
@@ -1160,7 +1160,7 @@
 		5C2AF4031AF1CAB9C5C82F8DE29BE08E /* Observable+Bind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+Bind.swift"; path = "RxCocoa/Common/Observable+Bind.swift"; sourceTree = "<group>"; };
 		5C62A681FFD009DCDE099BC2CD4E7C50 /* ControlTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ControlTarget.swift; path = RxCocoa/Common/ControlTarget.swift; sourceTree = "<group>"; };
 		5C8D371DA3EC09148E6F7D92DF93637C /* FKFlickrStatsGetPhotostreamStats.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrStatsGetPhotostreamStats.h; path = Classes/Model/Generated/Stats/FKFlickrStatsGetPhotostreamStats.h; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAlamofire.a; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* libAlamofire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAlamofire.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DCAC798521B17F258452FC809183189 /* FKFlickrUrlsGetUserProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrUrlsGetUserProfile.m; path = Classes/Model/Generated/Urls/FKFlickrUrlsGetUserProfile.m; sourceTree = "<group>"; };
 		5E2E23265BC0E743127883E7E2FC0FE6 /* FKFlickrPhotosSetDates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosSetDates.h; path = Classes/Model/Generated/Photos/FKFlickrPhotosSetDates.h; sourceTree = "<group>"; };
 		5EC1866DC3DED6CAAE3308441E94B7FC /* TakeUntil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TakeUntil.swift; path = RxSwift/Observables/TakeUntil.swift; sourceTree = "<group>"; };
@@ -1273,7 +1273,7 @@
 		802BC495DF951D4DFBBA3A4ECA616E2D /* NSTextView+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextView+Rx.swift"; path = "RxCocoa/macOS/NSTextView+Rx.swift"; sourceTree = "<group>"; };
 		80688A43AD64DB7FCADD038DA85895CD /* InvocableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvocableType.swift; path = RxSwift/Schedulers/Internal/InvocableType.swift; sourceTree = "<group>"; };
 		806D0527EEB78160AB3DFCD023D85699 /* FKDUDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKDUDiskCache.h; path = Classes/DevedUpKit/FKDUDiskCache.h; sourceTree = "<group>"; };
-		809C5FAB588354C9BA37DC3EAB8CB45C /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRxSwift.a; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		809C5FAB588354C9BA37DC3EAB8CB45C /* libRxSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRxSwift.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C8E2BD7DB197C658D6B4C247180389 /* UIDatePicker+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Rx.swift"; path = "RxCocoa/iOS/UIDatePicker+Rx.swift"; sourceTree = "<group>"; };
 		80FC62C14502508969A5AC687BB6BF97 /* KVORepresentable+Swift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KVORepresentable+Swift.swift"; path = "RxCocoa/Foundation/KVORepresentable+Swift.swift"; sourceTree = "<group>"; };
 		814999AD5E1FA2ABD067CDCA87B50256 /* FKFlickrPeopleGetUploadStatus.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPeopleGetUploadStatus.m; path = Classes/Model/Generated/People/FKFlickrPeopleGetUploadStatus.m; sourceTree = "<group>"; };
@@ -1343,7 +1343,7 @@
 		92D7F8D785277DC52B633ECAE609B359 /* Task.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Task.swift; path = Sources/Moya/Task.swift; sourceTree = "<group>"; };
 		92D8B450F22F15789988E62FCC846208 /* RxCollectionViewDataSourcePrefetchingProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourcePrefetchingProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourcePrefetchingProxy.swift; sourceTree = "<group>"; };
 		92EDB2888AFF332C1D6E5732A7E3E77D /* FKFlickrPhotosGetContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGetContext.m; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetContext.m; sourceTree = "<group>"; };
-		935F977AAA29103C2F25C7A6FFDD09DF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-RealityPuzzle.a"; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		935F977AAA29103C2F25C7A6FFDD09DF /* libPods-RealityPuzzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealityPuzzle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BCD59AA917DB77C9A3D828800602A5 /* UITabBar+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITabBar+Rx.swift"; path = "RxCocoa/iOS/UITabBar+Rx.swift"; sourceTree = "<group>"; };
 		93BD1993F0C5E40F2B82612B59C6432D /* FKFlickrAuthOauthCheckToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrAuthOauthCheckToken.m; path = Classes/Model/Generated/Auth/Oauth/FKFlickrAuthOauthCheckToken.m; sourceTree = "<group>"; };
 		93C96C45FAB97D7A27F98D7E4F5A21F4 /* FKFlickrPhotosSuggestionsRejectSuggestion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosSuggestionsRejectSuggestion.m; path = Classes/Model/Generated/Photos/Suggestions/FKFlickrPhotosSuggestionsRejectSuggestion.m; sourceTree = "<group>"; };
@@ -1380,7 +1380,7 @@
 		9B84BF2DA0BC1E9AFC2C3F6E7A4D87B8 /* RxCollectionViewReactiveArrayDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewReactiveArrayDataSource.swift; path = RxCocoa/iOS/DataSources/RxCollectionViewReactiveArrayDataSource.swift; sourceTree = "<group>"; };
 		9CF687A7857CAA6779C7EDB18F8FD13F /* NopDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NopDisposable.swift; path = RxSwift/Disposables/NopDisposable.swift; sourceTree = "<group>"; };
 		9D89AD6C0840484C4E5C63CE40BEE85D /* Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Merge.swift; path = RxSwift/Observables/Merge.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E0BD95237E208A805F2FCCAFF58F175 /* FKFlickrActivityUserComments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrActivityUserComments.h; path = Classes/Model/Generated/Activity/FKFlickrActivityUserComments.h; sourceTree = "<group>"; };
 		9E6E25BF5F4ACEF1B5570C76D6B5C46A /* VirtualTimeScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeScheduler.swift; path = RxSwift/Schedulers/VirtualTimeScheduler.swift; sourceTree = "<group>"; };
 		9EA4CADFA02ABA1F1AB11FC06C64BBC2 /* FKDUBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKDUBlocks.m; path = Classes/DevedUpKit/FKDUBlocks.m; sourceTree = "<group>"; };
@@ -1399,7 +1399,7 @@
 		A255B92287F935929C3C02CE6BB1D2FE /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Sources/Moya/Image.swift; sourceTree = "<group>"; };
 		A2CABD26FA3D52055283DF2A1F1E2EA8 /* Bag+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bag+Rx.swift"; path = "RxSwift/Extensions/Bag+Rx.swift"; sourceTree = "<group>"; };
 		A2F72A2C6D9C3D9702227A5659CB00D2 /* FKDUNetworkController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKDUNetworkController.h; path = Classes/DevedUpKit/FKDUNetworkController.h; sourceTree = "<group>"; };
-		A369AF6C5672066DEB9E8E77996A34FC /* libFlickrKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFlickrKit.a; path = libFlickrKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A369AF6C5672066DEB9E8E77996A34FC /* libFlickrKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFlickrKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A391AFB9684AD373CE3A655207B9E073 /* FKFlickrPushSubscribe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPushSubscribe.m; path = Classes/Model/Generated/Push/FKFlickrPushSubscribe.m; sourceTree = "<group>"; };
 		A3B18D5B9F5757353F8F8F0E9A7FD6DD /* RecursiveLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveLock.swift; path = Platform/RecursiveLock.swift; sourceTree = "<group>"; };
 		A3EE79BC4DD6221603B378A10C623218 /* FKFlickrPhotosGeoSetPerms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrPhotosGeoSetPerms.h; path = Classes/Model/Generated/Photos/Geo/FKFlickrPhotosGeoSetPerms.h; sourceTree = "<group>"; };
@@ -1481,7 +1481,7 @@
 		BBA01F4123A90AB06DEF7CB69BACD296 /* FKFlickrGalleriesGetPhotos.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrGalleriesGetPhotos.m; path = Classes/Model/Generated/Galleries/FKFlickrGalleriesGetPhotos.m; sourceTree = "<group>"; };
 		BBA6EEF24693BBE4AB3776DB0F8A1733 /* FKReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKReachability.h; path = Classes/Network/Reachability/FKReachability.h; sourceTree = "<group>"; };
 		BBC7D604A29242677D608044BF926A0B /* FKFlickrPhotosGetFavorites.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrPhotosGetFavorites.m; path = Classes/Model/Generated/Photos/FKFlickrPhotosGetFavorites.m; sourceTree = "<group>"; };
-		BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRxCocoa.a; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC432FD48A5932251F1CAFBC4BF74894 /* libRxCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRxCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6602B8B9BB0D35FA243A38D06BF815 /* FKFlickrAuthGetFrob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrAuthGetFrob.m; path = Classes/Model/Generated/Auth/FKFlickrAuthGetFrob.m; sourceTree = "<group>"; };
 		BCA5410512AC5C1EEF792A500B162E11 /* FKFlickrCollectionsGetInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FKFlickrCollectionsGetInfo.h; path = Classes/Model/Generated/Collections/FKFlickrCollectionsGetInfo.h; sourceTree = "<group>"; };
 		BE17713527D779BD2C1BCA695DC10894 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
@@ -1696,7 +1696,7 @@
 		FD7546971F72071C067A2F854F9B761B /* FKFlickrGalleriesGetList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKFlickrGalleriesGetList.m; path = Classes/Model/Generated/Galleries/FKFlickrGalleriesGetList.m; sourceTree = "<group>"; };
 		FD79CB65B9B4DFEFF64E15E359E6B031 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		FD8E409B4DD45BEE4F6484B3B5BF5727 /* FKUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FKUtilities.m; path = Classes/Utilities/FKUtilities.m; sourceTree = "<group>"; };
-		FF8B264DFE802855D5D67E7CDDABFC3C /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libRxRelay.a; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8B264DFE802855D5D67E7CDDABFC3C /* libRxRelay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRxRelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEDA7F562F0EEB3980C97DE2DDC2D73 /* Deprecated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecated.swift; path = RxCocoa/Deprecated.swift; sourceTree = "<group>"; };
 		FFF2CD9DB85AC8B70BD090A9C2C10D9E /* Never.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Never.swift; path = RxSwift/Observables/Never.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2206,7 +2206,6 @@
 				576A6C78AD794C5B7BDFCFE24485DD8B /* FlickrKit.m */,
 				2111AEC1F3F63835CFA04F1C58A5B8AF /* Support Files */,
 			);
-			name = FlickrKit;
 			path = FlickrKit;
 			sourceTree = "<group>";
 		};
@@ -2216,7 +2215,6 @@
 				888BA82AB210910448189956B458A3C3 /* Core */,
 				576B93CE4CE9263EB856D4D29D20C796 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -2399,7 +2397,6 @@
 				1B1E402E0E0C205FA2EC3BA205644B02 /* Zip+Collection.swift */,
 				2F6238259CE7EED2A911469AC7566F42 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -2557,7 +2554,6 @@
 				ABC5F637444E220881DC608427C8E3F0 /* WKWebView+Rx.swift */,
 				2399EFDA620182832C18783187F39948 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -2610,7 +2606,6 @@
 				176CED895F39A8910C4E9ADBB650CD20 /* Utils.swift */,
 				9E7FCC0B1466F774DD09C745E24C2554 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -2695,7 +2690,6 @@
 				CAE1D69E6699327C8EA0997C99B51018 /* Validation.swift */,
 				6FEEBBF0395895A28F407D6D86D24205 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3173,7 +3167,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -4145,7 +4139,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -4272,7 +4266,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/FlickrKit/FlickrKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
