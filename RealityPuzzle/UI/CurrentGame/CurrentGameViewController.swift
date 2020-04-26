@@ -14,16 +14,34 @@ class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
     @IBOutlet private weak var timeLabel: UILabel!
     @IBOutlet weak var counterLabel: UILabel!
     
+    lazy var statusLabel: UILabel = {
+        let statusLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 100))
+        statusLabel.textColor = .green
+        statusLabel.font = UIFont.systemFont(ofSize: 60)
+        statusLabel.textAlignment = .center
+        return statusLabel
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: false)
+        statusLabel.text = "Loading"
+        view.addSubview(statusLabel)
+        
+        viewModel.backgroundImageObservable
+            .skip(1)
+            .subscribe(onNext: { [weak self] image in
+                guard let self = self else { return }
+                self.startGame()
+                self.statusLabel.removeFromSuperview()
+                guard let image = image else { return }
+                self.view.backgroundColor = UIColor(patternImage: image)
+            }).disposed(by: disposeBag)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        if boardView.subviews.count == 0 {
-            startGame()
-        }
+        statusLabel.center = boardView.center
     }
     
     private func updateTimeLabel(currentTime: Int) {
@@ -69,12 +87,8 @@ class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
     }
     
     private func presentWonView() {
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 100))
-        label.text = "CONGARTS"
-        label.textColor = .green
-        label.font = UIFont.systemFont(ofSize: 60)
-        label.center = boardView.center
-        label.textAlignment = .center
-        view.addSubview(label)
+        statusLabel.text = "CONGARTS"
+        
+        view.addSubview(statusLabel)
     }
 }

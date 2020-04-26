@@ -1,7 +1,12 @@
+use_frameworks!
+
+def reactive_pods
+  pod 'RxSwift'
+  pod 'RxCocoa'
+end
+
 target "RealityPuzzle" do
-    pod 'Moya'
     pod 'FlickrKit'
-    pod 'RxSwift'
-    pod 'RxCocoa'
+    reactive_pods
 end
 

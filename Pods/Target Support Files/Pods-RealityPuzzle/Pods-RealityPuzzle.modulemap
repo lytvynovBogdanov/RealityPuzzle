@@ -1,4 +1,4 @@
-module Pods_RealityPuzzle {
+framework module Pods_RealityPuzzle {
   umbrella header "Pods-RealityPuzzle-umbrella.h"
 
   export *
