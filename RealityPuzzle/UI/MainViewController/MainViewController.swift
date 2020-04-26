@@ -36,9 +36,6 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
     
     private func presentLeaderboardScreen() {
         let tabBarController = LeaderboardTabBarController()
-        
-//        let viewModel = LeaderboardModelView()
-//        let newGameController = LeaderboardViewController(viewModel)
         navigationController?.pushViewController(tabBarController, animated: false)
     }
     

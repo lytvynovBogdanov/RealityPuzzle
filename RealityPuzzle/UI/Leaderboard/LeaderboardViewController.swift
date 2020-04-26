@@ -21,7 +21,6 @@ class LeaderboardViewController: ViewControllerBindable<LeaderboardModelView> {
         let nibName = LeaderboardTableViewCell.classString
         let nib = UINib(nibName: nibName, bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: nibName)
-//        tableView.register(LeaderboardTableViewCell.self, forCellReuseIdentifier: LeaderboardTableViewCell.classString)
     }
 }
 
