@@ -37,7 +37,6 @@ class Board: UIView {
                                 width: buttonSize,
                                 height: buttonSize)
         var currentPosition = (0, 0)
-
         var blankPiece: Piece!
         var pieces = [Piece]()
         disposeBag = DisposeBag()
@@ -85,15 +84,13 @@ class Board: UIView {
                     gameLength: gameSize)
         game?.gameOverObservable
             .filter { $0 == true }
-            .subscribe(onNext: { (_) in
-                print("finish")
-                
+            .subscribe(onNext: { [weak self] (_) in
+                self?.isUserInteractionEnabled = false
             }).disposed(by: disposeBag)
     }
     
     private func registerGestures(for label: UILabel) {
-        let tap = UITapGestureRecognizer(target: self,
-                                         action: #selector(handleTapGesture))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTapGesture))
         label.addGestureRecognizer(tap)
     }
     

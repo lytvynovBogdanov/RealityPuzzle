@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentGameViewController" customModule="RealityPuzzle" customModuleProvider="target">
             <connections>
                 <outlet property="boardView" destination="7Yd-jG-bve" id="jXd-Pa-tfY"/>
+                <outlet property="counterLabel" destination="aHy-eJ-KrQ" id="Yzv-Ey-6Wo"/>
+                <outlet property="timeLabel" destination="uxG-HZ-uc4" id="bx6-EY-tGr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,14 +47,30 @@
                         <action selector="mainMenuPressed:" destination="-1" eventType="touchUpInside" id="OHP-Ji-WgO"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-HZ-uc4">
+                    <rect key="frame" x="16" y="434.5" width="19" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHy-eJ-KrQ">
+                    <rect key="frame" x="163" y="434.5" width="53" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="7Yd-jG-bve" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" priority="999" constant="20" id="8LP-9Z-fLV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="925-t1-Dpf" secondAttribute="bottom" constant="20" id="8Mo-hh-fD9"/>
+                <constraint firstItem="925-t1-Dpf" firstAttribute="leading" secondItem="aHy-eJ-KrQ" secondAttribute="trailing" constant="8" id="FqR-sY-Odw"/>
                 <constraint firstItem="7Yd-jG-bve" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Hb2-Ql-Nzw"/>
                 <constraint firstItem="925-t1-Dpf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7Yd-jG-bve" secondAttribute="bottom" constant="20" id="UtI-0b-e2g"/>
+                <constraint firstItem="aHy-eJ-KrQ" firstAttribute="centerY" secondItem="925-t1-Dpf" secondAttribute="centerY" id="Wft-jM-uDJ"/>
                 <constraint firstItem="7Yd-jG-bve" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eq6-gy-avl"/>
+                <constraint firstItem="uxG-HZ-uc4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="exC-ar-1Vr"/>
+                <constraint firstItem="uxG-HZ-uc4" firstAttribute="centerY" secondItem="925-t1-Dpf" secondAttribute="centerY" id="vTW-Oc-Nax"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="925-t1-Dpf" secondAttribute="trailing" constant="20" id="x2N-jU-KJK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
