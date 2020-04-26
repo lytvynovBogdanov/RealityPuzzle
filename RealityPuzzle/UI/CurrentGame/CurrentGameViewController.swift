@@ -9,21 +9,10 @@
 import UIKit
 
 class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
+    
     @IBOutlet private weak var boardView: Board!
     @IBOutlet private weak var timeLabel: UILabel!
     @IBOutlet weak var counterLabel: UILabel!
-    
-    private var timer: Timer?
-    private var currentTime = 0 {
-        didSet {
-            updateTimeLabel()
-        }
-    }
-    private var steps: Int = 0 {
-        didSet {
-            updateStepsLabel()
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,24 +23,17 @@ class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
         super.viewDidLayoutSubviews()
         if boardView.subviews.count == 0 {
             startGame()
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] (timer) in
-                self?.currentTime += 1
-            }
         }
     }
     
-    deinit {
-        timer?.invalidate()
-    }
-    
-    private func updateTimeLabel() {
+    private func updateTimeLabel(currentTime: Int) {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.minute, .second]
         formatter.unitsStyle = .abbreviated
         timeLabel.text = formatter.string(from: TimeInterval(currentTime))
     }
     
-    private func updateStepsLabel() {
+    private func updateStepsLabel(steps: Int) {
         counterLabel.text = "Steps: \(steps)"
     }
     
@@ -61,16 +43,19 @@ class CurrentGameViewController: ViewControllerBindable<CurrentGameViewModel> {
     }
     
     private func bindGame() {
-        boardView.game?.gameOverObservable
+        guard let game = boardView.game else { return }
+        game.gameOverObservable
             .filter { $0 == true }
             .subscribe(onNext: { [weak self] (_) in
-                self?.timer?.invalidate()
                 self?.presentWonView()
             }).disposed(by: disposeBag)
-        boardView.game?.blankPiece.coordinateObservable
-            .skip(1)
-            .subscribe(onNext: { [weak self] _ in
-                self?.steps += 1
+        game.stepsObservable
+            .subscribe(onNext: { [weak self] steps in
+                self?.updateStepsLabel(steps: steps)
+            }).disposed(by: disposeBag)
+        game.currentTimeObservable
+            .subscribe(onNext: { [weak self] currentTime in
+                self?.updateTimeLabel(currentTime: currentTime)
             }).disposed(by: disposeBag)
     }
 

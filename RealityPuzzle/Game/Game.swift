@@ -16,6 +16,10 @@ class Game {
     let gameLength: Int
     
     let gameOverObservable = BehaviorRelay(value: false)
+    let currentTimeObservable = BehaviorRelay(value: 0)
+    let stepsObservable = BehaviorRelay(value: 0)
+    
+    private var timer: Timer?
     
     private let disposeBag = DisposeBag()
     
@@ -32,6 +36,11 @@ class Game {
         self.blankPiece = blankPiece
         self.gameLength = gameLength
         
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { [weak self] _ in
+            guard let self = self else { return }
+            self.currentTimeObservable.accept(self.currentTimeObservable.value + 1)
+        })
+        
         blankPiece.coordinateObservable
             .skip(1)
             .subscribe(onNext: { [weak self] (coordinates) in
@@ -39,11 +48,32 @@ class Game {
                     self?.gameOverObservable.accept(true)
                 }
             }).disposed(by: disposeBag)
+        
+        self.gameOverObservable
+            .filter { $0 == true }
+            .subscribe(onNext: { [weak self] _ in
+                self?.timer?.invalidate()
+                self?.saveGameResult()
+            }).disposed(by: disposeBag)
+    }
+    
+    deinit {
+        timer?.invalidate()
+    }
+    
+    private func saveGameResult() {
+        let gameResult = GameResult.newEmpty()
+        gameResult.steps = Int16(stepsObservable.value)
+        gameResult.time = Int16(currentTimeObservable.value)
+        gameResult.gameSize = Int16(gameLength)
+        gameResult.user = User.current
+        CoreDataManager.shared.saveContext()
     }
     
     func movePiceIfPossible(_ piece: Piece) {
         if isNeighbor(piece, blankPiece) {
             replace(piece, blankPiece)
+            stepsObservable.accept(stepsObservable.value + 1)
         }
     }
     

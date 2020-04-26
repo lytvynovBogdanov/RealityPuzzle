@@ -20,4 +20,8 @@ public class User: NSManagedObject {
     static func all() -> [User]? {
         return User.fetch() as? [User]? ?? nil
     }
+    
+    static var current: User? {
+        return find(name: UserPreferences.User.id)
+    }
 }

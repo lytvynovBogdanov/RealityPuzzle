@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493C45A324558FEC003CA477 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */; };
+		493C45A424558FEC003CA477 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */; };
 		496D4EE62452079D004541E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D4EE52452079D004541E0 /* AppDelegate.swift */; };
 		496D4EF02452079D004541E0 /* RealityPuzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 496D4EEE2452079D004541E0 /* RealityPuzzle.xcdatamodeld */; };
 		496D4EF2245207A4004541E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496D4EF1245207A4004541E0 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameResult+CoreDataProperties.swift"; path = "/Users/oleksii/Documents/ios/RealityPuzzle/RealityPuzzle/Models/GameResult+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameResult+CoreDataClass.swift"; path = "/Users/oleksii/Documents/ios/RealityPuzzle/RealityPuzzle/Models/GameResult+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		496D4EE22452079D004541E0 /* RealityPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496D4EE52452079D004541E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496D4EEF2452079D004541E0 /* RealityPuzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealityPuzzle.xcdatamodel; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 		496D4EFD24520A38004541E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */,
+				493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */,
 				499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */,
 				499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */,
 				496D4EEE2452079D004541E0 /* RealityPuzzle.xcdatamodeld */,
@@ -429,6 +435,7 @@
 				49A6FD51245259E7008CBEE9 /* Constants.swift in Sources */,
 				496D4EE62452079D004541E0 /* AppDelegate.swift in Sources */,
 				496D4F1F24520CAD004541E0 /* CurrentGameViewModel.swift in Sources */,
+				493C45A424558FEC003CA477 /* GameResult+CoreDataProperties.swift in Sources */,
 				496D4F0524520B58004541E0 /* Board.swift in Sources */,
 				49A6FD632452D118008CBEE9 /* CoreDataManager.swift in Sources */,
 				496D4EF02452079D004541E0 /* RealityPuzzle.xcdatamodeld in Sources */,
@@ -441,6 +448,7 @@
 				499660D124542EF300E9DAD6 /* User+CoreDataClass.swift in Sources */,
 				49A6FD572452CD07008CBEE9 /* UserEntryViewController.swift in Sources */,
 				496D4F1C24520CA0004541E0 /* CurrentGameViewController.swift in Sources */,
+				493C45A324558FEC003CA477 /* GameResult+CoreDataClass.swift in Sources */,
 				496D4F2B24520E77004541E0 /* ViewModelBindable.swift in Sources */,
 				49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */,
 				499660C924542D6D00E9DAD6 /* String.swift in Sources */,
