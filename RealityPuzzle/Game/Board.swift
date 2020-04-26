@@ -12,9 +12,6 @@ import RxSwift
 class Board: UIView {
 
     let distanceBetweenElements: CGFloat = 20
-    
-    var gameWonCallback: (() -> Void)?
-    var userMovedPiece: (() -> Void)?
     var game: Game?
     
     private var disposeBag = DisposeBag()
@@ -47,10 +44,10 @@ class Board: UIView {
                     guard let self = self else { return }
                     piece.frame.origin.x = CGFloat(coordinate.0) * self.buttonSize +
                         (CGFloat(coordinate.0) * self.distanceBetweenElements) +
-                        self.distanceBetweenElements
+                        (self.distanceBetweenElements / 2)
                     piece.frame.origin.y = CGFloat(coordinate.1) * self.buttonSize +
                         (CGFloat(coordinate.1) * self.distanceBetweenElements) +
-                        self.distanceBetweenElements
+                        (self.distanceBetweenElements / 2)
                 }).disposed(by: disposeBag)
         }
         

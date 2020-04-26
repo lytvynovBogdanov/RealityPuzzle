@@ -22,5 +22,4 @@ extension UIViewController {
     func presentErrorAlert(title: String? = "Error", message: String?) {
         presentAlertController(title: title, message: message, buttons: ["Ok"])
     }
-    
 }

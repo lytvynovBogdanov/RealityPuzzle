@@ -16,6 +16,7 @@ struct FlickrApi {
     static func fetchPhotos(with page: Int,
                             complition: @escaping (([URL]?) -> Void),
                             errorComplition: @escaping ((Error?) -> Void)) {
+        
         let flickr = FlickrKit.shared()
         flickr.initialize(withAPIKey: APIKey, sharedSecret: APISecret)
         let flickrInterestingness = FKFlickrInterestingnessGetList()

@@ -13,6 +13,7 @@ struct Ranged<T: Comparable> {
     private var minimum: T
     private var maximum: T
     private var value: T
+    
     var wrappedValue: T {
         get { value }
         set {
@@ -25,6 +26,7 @@ struct Ranged<T: Comparable> {
             }
         }
     }
+    
     init(wrappedValue: T, minimum: T, maximum: T) {
         self.minimum = minimum
         self.maximum = maximum
