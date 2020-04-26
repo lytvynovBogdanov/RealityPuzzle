@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		493C45A324558FEC003CA477 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */; };
-		493C45A424558FEC003CA477 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */; };
+		493C45A624559902003CA477 /* LeaderboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A524559902003CA477 /* LeaderboardTabBarController.swift */; };
+		493C45AB2455B18F003CA477 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A72455B18F003CA477 /* User+CoreDataClass.swift */; };
+		493C45AC2455B18F003CA477 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A82455B18F003CA477 /* User+CoreDataProperties.swift */; };
+		493C45AD2455B18F003CA477 /* GameResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45A92455B18F003CA477 /* GameResult+CoreDataClass.swift */; };
+		493C45AE2455B18F003CA477 /* GameResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45AA2455B18F003CA477 /* GameResult+CoreDataProperties.swift */; };
+		493C45B12455B300003CA477 /* LeaderboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45AF2455B300003CA477 /* LeaderboardTableViewCell.swift */; };
+		493C45B22455B300003CA477 /* LeaderboardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493C45B02455B300003CA477 /* LeaderboardTableViewCell.xib */; };
+		493C45B52455B38C003CA477 /* LeaderboardTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45B42455B38C003CA477 /* LeaderboardTableViewCellModel.swift */; };
+		493C45B72455B3DD003CA477 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493C45B62455B3DD003CA477 /* BaseTableViewCell.swift */; };
 		496D4EE62452079D004541E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496D4EE52452079D004541E0 /* AppDelegate.swift */; };
 		496D4EF02452079D004541E0 /* RealityPuzzle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 496D4EEE2452079D004541E0 /* RealityPuzzle.xcdatamodeld */; };
 		496D4EF2245207A4004541E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496D4EF1245207A4004541E0 /* Assets.xcassets */; };
@@ -34,8 +41,6 @@
 		499660C52454287000E9DAD6 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660C42454287000E9DAD6 /* UIViewController.swift */; };
 		499660C7245428A700E9DAD6 /* UIAlertController+CustomAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660C6245428A700E9DAD6 /* UIAlertController+CustomAlerts.swift */; };
 		499660C924542D6D00E9DAD6 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660C824542D6D00E9DAD6 /* String.swift */; };
-		499660D024542EF300E9DAD6 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */; };
-		499660D124542EF300E9DAD6 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */; };
 		499660D32454B5AB00E9DAD6 /* Limitation=Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499660D22454B5AB00E9DAD6 /* Limitation=Wrapper.swift */; };
 		49A6FD51245259E7008CBEE9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD50245259E7008CBEE9 /* Constants.swift */; };
 		49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */; };
@@ -51,8 +56,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameResult+CoreDataProperties.swift"; path = "/Users/oleksii/Documents/ios/RealityPuzzle/RealityPuzzle/Models/GameResult+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
-		493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "GameResult+CoreDataClass.swift"; path = "/Users/oleksii/Documents/ios/RealityPuzzle/RealityPuzzle/Models/GameResult+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		493C45A524559902003CA477 /* LeaderboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTabBarController.swift; sourceTree = "<group>"; };
+		493C45A72455B18F003CA477 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		493C45A82455B18F003CA477 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		493C45A92455B18F003CA477 /* GameResult+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		493C45AA2455B18F003CA477 /* GameResult+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		493C45AF2455B300003CA477 /* LeaderboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCell.swift; sourceTree = "<group>"; };
+		493C45B02455B300003CA477 /* LeaderboardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaderboardTableViewCell.xib; sourceTree = "<group>"; };
+		493C45B42455B38C003CA477 /* LeaderboardTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardTableViewCellModel.swift; sourceTree = "<group>"; };
+		493C45B62455B3DD003CA477 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		496D4EE22452079D004541E0 /* RealityPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealityPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496D4EE52452079D004541E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		496D4EEF2452079D004541E0 /* RealityPuzzle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RealityPuzzle.xcdatamodel; sourceTree = "<group>"; };
@@ -80,8 +92,6 @@
 		499660C42454287000E9DAD6 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		499660C6245428A700E9DAD6 /* UIAlertController+CustomAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+CustomAlerts.swift"; sourceTree = "<group>"; };
 		499660C824542D6D00E9DAD6 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		499660D22454B5AB00E9DAD6 /* Limitation=Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Limitation=Wrapper.swift"; sourceTree = "<group>"; };
 		49A6FD50245259E7008CBEE9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49A6FD532452CCDC008CBEE9 /* UserEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntryViewModel.swift; sourceTree = "<group>"; };
@@ -117,6 +127,16 @@
 				D5D41187F6509C1EF5351B73 /* Pods-RealityPuzzle.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		493C45B32455B379003CA477 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				493C45AF2455B300003CA477 /* LeaderboardTableViewCell.swift */,
+				493C45B02455B300003CA477 /* LeaderboardTableViewCell.xib */,
+				493C45B42455B38C003CA477 /* LeaderboardTableViewCellModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		496D4ED92452079D004541E0 = {
@@ -164,10 +184,10 @@
 		496D4EFD24520A38004541E0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				493C45A224558FEC003CA477 /* GameResult+CoreDataClass.swift */,
-				493C45A124558FEC003CA477 /* GameResult+CoreDataProperties.swift */,
-				499660CF24542EF300E9DAD6 /* User+CoreDataClass.swift */,
-				499660CE24542EF300E9DAD6 /* User+CoreDataProperties.swift */,
+				493C45A72455B18F003CA477 /* User+CoreDataClass.swift */,
+				493C45A82455B18F003CA477 /* User+CoreDataProperties.swift */,
+				493C45A92455B18F003CA477 /* GameResult+CoreDataClass.swift */,
+				493C45AA2455B18F003CA477 /* GameResult+CoreDataProperties.swift */,
 				496D4EEE2452079D004541E0 /* RealityPuzzle.xcdatamodeld */,
 			);
 			path = Models;
@@ -248,9 +268,11 @@
 		496D4F2024520CC9004541E0 /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
+				493C45B32455B379003CA477 /* Cell */,
 				496D4F2124520CDA004541E0 /* LeaderboardViewModel.swift */,
 				496D4F2324520CE8004541E0 /* LeaderboardViewController.swift */,
 				496D4F2424520CE8004541E0 /* LeaderboardViewController.xib */,
+				493C45A524559902003CA477 /* LeaderboardTabBarController.swift */,
 			);
 			path = Leaderboard;
 			sourceTree = "<group>";
@@ -260,6 +282,7 @@
 			children = (
 				496D4F2824520E50004541E0 /* ViewControllerBindable.swift */,
 				496D4F2A24520E77004541E0 /* ViewModelBindable.swift */,
+				493C45B62455B3DD003CA477 /* BaseTableViewCell.swift */,
 			);
 			path = Bindable;
 			sourceTree = "<group>";
@@ -393,6 +416,7 @@
 				496D4F1624520C51004541E0 /* NewGameViewController.xib in Resources */,
 				496D4EF2245207A4004541E0 /* Assets.xcassets in Resources */,
 				49A6FD5E2452CFBC008CBEE9 /* UsersOverviewViewController.xib in Resources */,
+				493C45B22455B300003CA477 /* LeaderboardTableViewCell.xib in Resources */,
 				496D4F1D24520CA0004541E0 /* CurrentGameViewController.xib in Resources */,
 				496D4F0F24520C1D004541E0 /* MainViewController.xib in Resources */,
 			);
@@ -433,29 +457,33 @@
 				49A6FD5D2452CFBC008CBEE9 /* UsersOverviewViewController.swift in Sources */,
 				496D4F0724520B79004541E0 /* Piece.swift in Sources */,
 				49A6FD51245259E7008CBEE9 /* Constants.swift in Sources */,
+				493C45A624559902003CA477 /* LeaderboardTabBarController.swift in Sources */,
 				496D4EE62452079D004541E0 /* AppDelegate.swift in Sources */,
 				496D4F1F24520CAD004541E0 /* CurrentGameViewModel.swift in Sources */,
-				493C45A424558FEC003CA477 /* GameResult+CoreDataProperties.swift in Sources */,
+				493C45B12455B300003CA477 /* LeaderboardTableViewCell.swift in Sources */,
 				496D4F0524520B58004541E0 /* Board.swift in Sources */,
 				49A6FD632452D118008CBEE9 /* CoreDataManager.swift in Sources */,
 				496D4EF02452079D004541E0 /* RealityPuzzle.xcdatamodeld in Sources */,
 				496D4F0324520B2B004541E0 /* GameGenerator.swift in Sources */,
 				496D4F2924520E50004541E0 /* ViewControllerBindable.swift in Sources */,
 				499660C7245428A700E9DAD6 /* UIAlertController+CustomAlerts.swift in Sources */,
+				493C45AE2455B18F003CA477 /* GameResult+CoreDataProperties.swift in Sources */,
 				496D4F2524520CE8004541E0 /* LeaderboardViewController.swift in Sources */,
 				49A6FD69245425EA008CBEE9 /* UserDefault+Wrapper.swift in Sources */,
 				496D4F2D245213ED004541E0 /* NSObject+Classname.swift in Sources */,
-				499660D124542EF300E9DAD6 /* User+CoreDataClass.swift in Sources */,
+				493C45AD2455B18F003CA477 /* GameResult+CoreDataClass.swift in Sources */,
 				49A6FD572452CD07008CBEE9 /* UserEntryViewController.swift in Sources */,
+				493C45B52455B38C003CA477 /* LeaderboardTableViewCellModel.swift in Sources */,
 				496D4F1C24520CA0004541E0 /* CurrentGameViewController.swift in Sources */,
-				493C45A324558FEC003CA477 /* GameResult+CoreDataClass.swift in Sources */,
 				496D4F2B24520E77004541E0 /* ViewModelBindable.swift in Sources */,
+				493C45B72455B3DD003CA477 /* BaseTableViewCell.swift in Sources */,
+				493C45AC2455B18F003CA477 /* User+CoreDataProperties.swift in Sources */,
 				49A6FD542452CCDC008CBEE9 /* UserEntryViewModel.swift in Sources */,
+				493C45AB2455B18F003CA477 /* User+CoreDataClass.swift in Sources */,
 				499660C924542D6D00E9DAD6 /* String.swift in Sources */,
 				49A6FD662452D266008CBEE9 /* NSManagedObject+fetch.swift in Sources */,
 				496D4F0924520B91004541E0 /* Game.swift in Sources */,
 				496D4F1524520C51004541E0 /* NewGameViewController.swift in Sources */,
-				499660D024542EF300E9DAD6 /* User+CoreDataProperties.swift in Sources */,
 				499660C52454287000E9DAD6 /* UIViewController.swift in Sources */,
 				496D4F0E24520C1D004541E0 /* MainViewController.swift in Sources */,
 				496D4F2224520CDA004541E0 /* LeaderboardViewModel.swift in Sources */,

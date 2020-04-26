@@ -35,9 +35,11 @@ class MainViewController: ViewControllerBindable<MainViewModel> {
     }
     
     private func presentLeaderboardScreen() {
-        let viewModel = LeaderboardModelView()
-        let newGameController = LeaderboardViewController(viewModel)
-        navigationController?.pushViewController(newGameController, animated: false)
+        let tabBarController = LeaderboardTabBarController()
+        
+//        let viewModel = LeaderboardModelView()
+//        let newGameController = LeaderboardViewController(viewModel)
+        navigationController?.pushViewController(tabBarController, animated: false)
     }
     
     private func presentSelectUserScreen() {

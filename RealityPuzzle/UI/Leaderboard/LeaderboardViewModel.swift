@@ -9,5 +9,15 @@
 import Foundation
 
 struct LeaderboardModelView {
-    let titleModel = "Leaderboard"
+    let gameSize: Int
+    let gameResults: [GameResult]
+    
+    init(gameSize: Int) {
+        self.gameSize = gameSize
+        self.gameResults = GameResult.all(for: gameSize) ?? []
+    }
+    
+    var titleModel: String {
+        return String(gameSize)
+    }
 }

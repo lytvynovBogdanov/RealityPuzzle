@@ -51,6 +51,7 @@ class Game {
         
         self.gameOverObservable
             .filter { $0 == true }
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] _ in
                 self?.timer?.invalidate()
                 self?.saveGameResult()

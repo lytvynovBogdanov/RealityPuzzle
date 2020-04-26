@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  
 //
-//  Created by Oleksii Lytvynov-Bohdanov on 25.04.2020.
+//  Created by Oleksii Lytvynov-Bohdanov on 26.04.2020.
 //
 //
 
@@ -13,7 +13,7 @@ import CoreData
 extension User {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
-        return NSFetchRequest<User>(entityName: Self.classString)
+        return NSFetchRequest<User>(entityName: "User")
     }
 
     @NSManaged public var name: String?
@@ -21,10 +21,19 @@ extension User {
 
 }
 
-// MARK: Generated accessors for metadatas
+// MARK: Generated accessors for games
 extension User {
 
-    @NSManaged public func addToUsers(_ value: GameResult)
-    @NSManaged public func removeFromUsers(_ value: GameResult)
+    @objc(addGamesObject:)
+    @NSManaged public func addToGames(_ value: GameResult)
+
+    @objc(removeGamesObject:)
+    @NSManaged public func removeFromGames(_ value: GameResult)
+
+    @objc(addGames:)
+    @NSManaged public func addToGames(_ values: NSSet)
+
+    @objc(removeGames:)
+    @NSManaged public func removeFromGames(_ values: NSSet)
 
 }
